@@ -13,7 +13,7 @@ export default class App extends Component {
         super(props);
         this.state = {
             input: '',
-            searchTerm: 'User',
+            searchTerm: 'Bikram',
             pageNo: 1,
             result: ''
         };
@@ -97,7 +97,7 @@ export default class App extends Component {
                         nextPage = { this.nextPage }
                         prePage = { this.prePage }
                         pageNo = { this.state.pageNo }
-                        totalPage = { this.state.result.total_count }
+                        totalPage = { this.state.result.total_count/10 }
                     />
                 </div>
             )
